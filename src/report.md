@@ -60,6 +60,8 @@
 
 ## Часть 4. Обновление ОС
 
+- sudo apt update - обновление системы
+
 ![image-20240203193435073](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203193435073.png)
 
 
