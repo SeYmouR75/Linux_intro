@@ -2,7 +2,7 @@
 
 - Информация о версии ОС.
 
-![image-20240131225856089](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240131225856089.png)
+![image-1](images/1.jpg)
 
 
 
