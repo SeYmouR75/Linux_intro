@@ -10,7 +10,7 @@
 
 - Вывод команды cat /etc/passwd  после добавления нового пользователя "runcelgh"(изначальный пользователь seymourghis)
 
-![image-20240131231343007](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240131231343007.png)
+![image-2](images/2.jpg)
 
 
 
@@ -18,35 +18,35 @@
 
 - Изменение hostname'а.
 
-![image-20240131232042178](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240131232042178.png)
+![image-3](images/3.jpg)
 
 - Установка временной зоны.
 
-![image-20240131232845143](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240131232845143.png)
+![image-4](images/4.jpg)
 
 - Список названий сетевых интерфейсов 
 
-![image-20240131233209178](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240131233209178.png)
+![image-5](images/5.jpg)
 
 - Интерфейс **lo** - это локальная петля, которая имеет IP-адрес 127.0.0.1 и предназначена для сетевого доступа к своему же компьютеру
 
 - Ip адрес текущего устройства
 
-![image-20240201001203509](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240201001203509.png)
+![image-6](images/6.jpg)
 
 - **Dynamic Host Configuration Protocol (DHCP)** — протокол, позволяющий автоматически настраивать сетевые параметры компьютера, такие как IP-адрес, маска подсети, шлюз по умолчанию и DNS-серверы.
 
 - Внешний адрес шлюза
 
-![image-20240201002509913](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240201002509913.png)
+![image-7](images/7.jpg)
 
 - Внутренний адрес шлюза
 
-![image-20240201002718538](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240201002718538.png)
+![image-8](images/8.jpg)
 
 - Заданные статично в конфигурационный файл ip gw и DNS(сам файл 00-installer-config.yaml был изменён через vim)
 
-![image-20240203164413362](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203164413362.png)
+![image-9](images/9.jpg)
 
 - После изменения конфигурации обязательно нужно выполнить команду netplan apply
 
@@ -54,7 +54,7 @@
 
 - Пинг на 1.1.1.1 и ya.ru для проверки сети
 
-![image-20240203164724394](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203164724394.png)
+![image-10](images/10.jpg)
 
 
 
@@ -62,7 +62,7 @@
 
 - sudo apt update - обновление системы
 
-![image-20240203193435073](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203193435073.png)
+![image-11](images/11.jpg)
 
 
 
@@ -71,13 +71,13 @@
 - Добавляем пользователя runcelgh в группу sudo выполняя: sudo usermod -G sudo runcelgh 
 - С помощью команды sudo -i -U runcelgh проверяем может ли пользователь вызывать sudo
 
-![image-20240203200852400](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203200852400.png)
+![image-12](images/12.jpg)
 
 
 
 - sudo — это утилита, предоставляющая привилегии root для выполнения административных операций в соответствии со своими настройками. Она позволяет легко контролировать доступ к важным приложениям в системе. По умолчанию, при установке Ubuntu первому пользователю (тому, который создаётся во время установки) предоставляются полные права на использование sudo. Т.е. фактически первый пользователь обладает той же свободой действий, что и root.
 
-![image-20240203201745351](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203201745351.png)
+![image-13](images/13.jpg)
 
 
 
@@ -85,11 +85,11 @@
 
 - Часовой пояс UTC+7
 
-![image-20240203202740121](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203202740121.png)
+![image-14](images/14.jpg)
 
 - Вывод timedatectl show
 
-![image-20240203202546735](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203202546735.png)
+![image-15](images/15.jpg)
 
 ## Часть 7. Установка и использование текстовых редакторов
 
@@ -97,26 +97,26 @@
 
 
 
-![image-20240203203048139](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203203048139.png)
+![image-16](images/16.jpg)
 
 - Для выхода с сохранением ":wq"
 
   
 
-![image-20240203203542883](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240203203542883.png)
+![image-17](images/17.jpg)
 
 - Для выхода без сохранения "q!"
 
 
 
-![image-20240204170318666](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204170318666.png)
+![image-18](images/18.jpg)
 
 - Для поиска вниз используется "/word_to_find", вверх используется "?word_to_find"
 - Также для поиска одного символа можно использовать "f"
 
 
 
-![image-20240204171220369](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204171220369.png)
+![image-19](images/19.jpg)
 
 - Для поиска и замены существует конструкция ":%s/word_to_change/new_word"
 
@@ -124,24 +124,24 @@
 
 - Nano
 
-![image-20240204171921013](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204171921013.png)
+![image-20](images/20.jpg)
 
 - Для сохранения сочетание клавиш ctrl+o
 - Для закрытия ctrl+x
 
-![image-20240204172045648](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204172045648.png)
+![image-21](images/21.jpg)
 
 - Для закрытия без сохранения изменений нужно просто закрыть редактор сочетанием из прошлого пункта и отказаться от сохранения нажав "n"
 
-![image-20240204172148496](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204172148496.png)
+![image-22](images/22.jpg)
 
-![image-20240204172611426](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204172611426.png)
+![image-23](images/23.jpg)
 
 - Для поиска в нано используется сочетание клавиш ctrl+w после чего нужно ввести искомый текст и нажать enter(при этом что бы дальше листать совпадения можно использовать как повторное применение ctrl+w, enter так и alt+w)
 
 
 
-![image-20240204174524882](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204174524882.png)
+![image-24](images/24.jpg)
 
 - Для поиска и замены использовать ctrl+\(сначала запрашивает что искать, потом на что менять и проходится по всем совпадениям предлагая заменить, можно менять по одному а можно сразу все)
 
@@ -149,21 +149,21 @@
 
 - JOE
 
-![image-20240204174904692](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204174904692.png)
+![image-25](images/25.jpg)
 
-![image-20240204175025841](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204175025841.png)
+![image-26](images/26.jpg)
 
 - Для выхода - ctrl+k и затем q, редактор предложит сохранить изменения если они были таким образом для выхода с сохранением жмём y или n что бы отказаться от сохранения изменений
 
-![image-20240204175128823](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204175128823.png)
+![image-27](images/27.jpg)
 
-![image-20240204180030456](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204180030456.png)
+![image-28](images/28.jpg)
 
 - Для поиска ввести ctrl+k затем f и искомый текст
 
 
 
-![image-20240204180126693](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204180126693.png)
+![image-29](images/29.jpg)
 
 - То же для поиска и замены только, при поиске выбрать пункт Replace и указать заменяемый текст
 
@@ -174,16 +174,16 @@
 - sudo apt-get install ssh для установки sshd
 - sudo systemctl enable ssh для включения автостарта и systemctl status ssh для проверки работы
 
-![image-20240204181243370](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204181243370.png)
+![image-30](images/30.jpg)
 
 - sudo nano /etc/ssh/sshd_config и замена port 22 на port 2022
 - systemctl restart sshd - перезапуск службы для обновления порта
 
-![image-20240204210744619](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204210744619.png)
+![image-31](images/31.jpg)
 
 - ps утилита которая позволяет отображать процессы запущенные на машине, также здесь используется флаг -C который позволяет отобразить процессы по названию в нашем случае sshd
 
-![image-20240204211515737](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240204211515737.png)
+![image-32](images/32.jpg)
 
 - Вывод netstat -tan
 
@@ -209,7 +209,7 @@
 
 ### Top
 
-![image-20240205161335421](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205161335421.png)
+![image-33](images/33.jpg)
 
 - uptime - 7 min
 - 2 пользователя
@@ -226,33 +226,33 @@
 
 - сортировка по PID командой htop --sort-key PID
 
-![image-20240205170628633](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205170628633.png)
+![image-34](images/34.jpg)
 
 
 
 - сортировка командой htop --sort-key PERCENT_CPU
 
-![image-20240205170724036](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205170724036.png)
+![image-35](images/35.jpg)
 
 - сортировка командой htop --sort-key PERCENT_MEM
 
-![image-20240205170954632](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205170954632.png)
+![image-36](images/36.jpg)
 
 - сортировка командой htop --sort-key TIME
 
-![image-20240205171046285](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205171046285.png)
+![image-37](images/37.jpg)
 
 - фильтрация по sshd через: f4 и ввод sshd
 
-![image-20240205171427015](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205171427015.png)
+![image-38](images/38.jpg)
 
 - фильтрация по sshd через: f3 и ввод syslog
 
-![image-20240205174334122](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205174334122.png)
+![image-39](images/39.jpg)
 
 - нажав f2 можно попасть в меню настройки утилиты где мы и добавим отображение hostname, clock, uptime
 
-![image-20240205174552642](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205174552642.png)
+![image-40](images/40.jpg)
 
 
 
@@ -272,7 +272,7 @@
 - процент использования - 29 
 - единица измерения 1 килобайт
 
-![image-20240205181712086](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205181712086.png)
+![image-41](images/41.jpg)
 
 #### Добавим флаги -Th
 
@@ -282,7 +282,7 @@
 - процент использования - 29
 - тип файловой системы - ext4
 
-![image-20240205182145188](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205182145188.png)
+![image-42](images/42.jpg)
 
 
 
@@ -290,19 +290,19 @@
 
 - /home - 168 Кб
 
-![image-20240205182903124](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205182903124.png)
+![image-43](images/43.jpg)
 
 - /var - 722 Мб
 
-![image-20240205182839152](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205182839152.png)
+![image-44](images/44.jpg)
 
 - /var/log - 61 Мб
 
-![image-20240205182819086](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205182819086.png)
+![image-45](images/45.jpg)
 
 - sudo du -h /var/log/*
 
-![image-20240205183012019](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205183012019.png)
+![image-46](images/46.jpg)
 
 
 
@@ -310,17 +310,17 @@
 
 - установка
 
-![image-20240205183140797](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205183140797.png)
+![image-47](images/47.jpg)
 
 - ncdu ../../
 
-![image-20240205183422488](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205183422488.png)
+![image-48](images/48.jpg)
 
 - /home -164 KiB
 - /var - 717.3 MiB
 - /var/log - 60.8 MiB
 
-![image-20240205183535961](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205183535961.png)
+![image-49](images/49.jpg)
 
 
 
@@ -334,11 +334,11 @@
 
 - последний вход
 
-![image-20240205184948796](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205184948796.png)
+![image-50](images/50.jpg)
 
 - отчёт о рестарте 
 
-![image-20240205185311067](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205185311067.png)
+![image-51](images/51.jpg)
 
 
 
@@ -346,8 +346,8 @@
 
 - логи исполнения uptime
 
-![image-20240205193306771](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205193306771.png)
+![image-52](images/52.jpg)
 
 - отображение отсутствия заданий CRON
 
-![image-20240205193604908](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20240205193604908.png)
+![image-53](images/53.jpg)
